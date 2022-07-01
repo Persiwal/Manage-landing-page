@@ -1,0 +1,31 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 46px;
+
+  .dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border: 2px solid $bright-red;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $bright-red;
+    }
+
+    @include breakpoint(md) {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .activeDot {
+    background-color: $bright-red;
+  }
+}
