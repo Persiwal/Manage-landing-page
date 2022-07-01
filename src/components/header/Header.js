@@ -1,4 +1,4 @@
-import useMediaQuery from "../../hooks/use-mediaQuery";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import styles from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import Menu from "./Menu/Menu";

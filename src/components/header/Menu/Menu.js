@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import useMediaQuery from "../../../hooks/use-mediaQuery";
+import useMediaQuery from "../../../hooks/useMediaQuery";
 
 import styles from "./Menu.module.scss";
 
