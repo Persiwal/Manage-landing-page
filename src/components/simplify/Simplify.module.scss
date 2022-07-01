@@ -14,9 +14,10 @@
   @include breakpoint(sm) {
     flex-direction: row;
     justify-content: space-between;
+    height: 220px;
     background: url("../../assets/bg-simplify-section-desktop.svg")
       hsl(12, 88%, 59%);
-    height: 220px;
+    background-repeat: no-repeat;
     background-position-x: 200px;
     background-position-y: -100px;
     padding: 0px 64px 0px 64px;
