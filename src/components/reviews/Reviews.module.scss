@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.reviews {
+  width: 100%;
+  margin-bottom: 42px;
+
+  h2 {
+    text-align: center;
+    color: $dark-blue;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 97px;
+
+    @include breakpoint(md) {
+      font-size: 35px;
+    }
+  }
+
+  .slider {
+    display: flex;
+    width: 400%;
+    gap: 32px;
+    padding: 0px 16px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+}
