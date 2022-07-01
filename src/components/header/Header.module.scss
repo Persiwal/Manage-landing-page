@@ -1,0 +1,20 @@
+@import "../../mixins.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 24px;
+
+  @include breakpoint(md) {
+    padding: 40px 64px;
+  }
+
+  @include breakpoint(xl) {
+    padding: 56px 164px;
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
