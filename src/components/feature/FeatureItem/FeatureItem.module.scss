@@ -1,0 +1,59 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+.featureItem {
+  width: 100vw;
+  margin-inline-start: 50%;
+  transform: translateX(-50%);
+  padding-left: 16px;
+  margin-bottom: 50px;
+
+  @include breakpoint(sm) {
+    width: 100%;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    background-color: $very-pale-red;
+    gap: 15px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+    margin-bottom: 18px;
+
+    @include breakpoint(sm) {
+      background-color: transparent;
+      gap: 28px;
+    }
+
+    .index {
+      display: inline-block;
+      width: 64px;
+      background-color: $bright-red;
+      text-align: center;
+      color: $very-light-gray;
+      padding: 12px 0px;
+      border-radius: 500px;
+    }
+
+    h3 {
+      margin: 0;
+      color: $dark-blue;
+      font-size: 14px;
+
+      @include breakpoint(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .content {
+    font-size: 14px;
+    color: $dark-grayish-blue;
+
+    @include breakpoint(md) {
+      font-size: 16px;
+      padding-left: 90px;
+    }
+  }
+}
