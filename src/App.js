@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Feature from "./components/feature/Feature";
 import Reviews from "./components/reviews/Reviews";
-import CallToAction from "./components/callToAction/CallToAction";
+import Simplify from "./components/simplify/Simplify";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Hero />
         <Feature />
         <Reviews />
-        <CallToAction />
+        <Simplify />
       </main>
       <footer>
         <Footer />
