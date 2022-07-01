@@ -1,0 +1,77 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.feature {
+  position: relative;
+  padding: 0px 25px;
+  margin-bottom: 80px;
+
+  @include breakpoint(sm) {
+    display: flex;
+    padding: 0px 64px;
+  }
+
+  @include breakpoint(xl) {
+    padding: 0px 164px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../../assets/bg-tablet-pattern.svg");
+    position: absolute;
+    top: -126%;
+    right: -43%;
+    bottom: 16%;
+    left: 67%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -2;
+
+    @include breakpoint(sm) {
+      top: 46%;
+      right: 75%;
+      bottom: -102%;
+      left: -64%;
+      background-position: bottom right;
+    }
+  }
+
+  .intro {
+    margin-bottom: 60px;
+    text-align: center;
+
+    @include breakpoint(sm) {
+      flex: 1 1 0px;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: $dark-blue;
+      margin-bottom: 25px;
+
+      @include breakpoint(sm) {
+        margin: 0;
+        font-size: 35px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      color: $dark-grayish-blue;
+
+      @include breakpoint(sm) {
+        max-width: 340px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .items {
+    flex: 1 1 0px;
+    list-style-type: none;
+    padding-left: 16px;
+    margin: 0;
+  }
+}
