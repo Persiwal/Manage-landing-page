@@ -1,0 +1,23 @@
+@import "../../../variables.scss";
+
+.button {
+  width: 137px;
+  height: 44px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.bgBrightRed {
+  background-color: $bright-red;
+  color: $very-light-gray;
+}
+
+.bgLightGrey {
+  background-color: $very-light-gray;
+  color: $bright-red;
+}
