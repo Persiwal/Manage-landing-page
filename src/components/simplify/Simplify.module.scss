@@ -1,0 +1,44 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.callToAction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../../assets/bg-simplify-section-mobile.svg")
+    hsl(12, 88%, 59%);
+  background-repeat: no-repeat;
+  padding: 104px 36px 90px 36px;
+  gap: 26px;
+
+  @include breakpoint(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    background: url("../../assets/bg-simplify-section-desktop.svg")
+      hsl(12, 88%, 59%);
+    height: 220px;
+    background-position-x: 200px;
+    background-position-y: -100px;
+    padding: 0px 64px 0px 64px;
+  }
+
+  @include breakpoint(md) {
+    padding: 0px 96px 0px 96px;
+  }
+
+  @include breakpoint(lg) {
+    padding: 0px 164px 0px 164px;
+  }
+
+  h2 {
+    max-width: 436px;
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    color: $very-light-gray;
+
+    @include breakpoint(sm) {
+      text-align: left;
+    }
+  }
+}
