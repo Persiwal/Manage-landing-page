@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://manage-landing-page-snowy.vercel.app/)
+- Live Site URL: [Live](https://manage-landing-page-snowy.vercel.app/)
 
 ## My process
 
